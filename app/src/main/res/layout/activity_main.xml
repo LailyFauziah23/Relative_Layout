@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=""
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_PT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/PT_name"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_location"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/txt_PT"
+        android:layout_marginTop="15dp"
+        android:layout_alignStart="@+id/txt_PT"
+        android:src="@drawable/location"
+        />
+
+    <TextView
+        android:id="@+id/txt_sleman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kota"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@id/img_location"
+        android:layout_toRightOf="@id/img_location"
+        android:layout_marginLeft="10dp" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/informasi_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/border_information"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_location"
+       >
+
+        <!-- Title Text -->
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/perubahan_data"
+            android:textColor="#9D9D9D"
+            android:textSize="14sp"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Last Update Label -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pembaruan_terakhir"
+            android:textColor="#9D9D9D"
+            android:textSize="14sp"
+            android:layout_below="@id/textView1"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp" />
+
+        <!-- Last Update Date -->
+        <TextView
+            android:id="@+id/textView2_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tanggal_terakhir"
+            android:textColor="#EE6627"
+            android:textSize="14sp"
+            android:layout_toEndOf="@id/textView2"
+            android:layout_alignBaseline="@id/textView2"
+            android:layout_marginStart="8dp" />
+
+        <!-- Next Update Label -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pembaruan_selanjutnya"
+            android:textColor="#9D9D9D"
+            android:textSize="14sp"
+            android:layout_below="@id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp" />
+
+        <!-- Next Update Date -->
+        <TextView
+            android:id="@+id/textView3_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tanggal_selanjutnya"
+            android:textColor="#FF5722"
+            android:textSize="14sp"
+            android:layout_toEndOf="@id/textView3"
+            android:layout_alignBaseline="@id/textView3"
+            android:layout_marginStart="8dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_katalogtender"
+        android:background="@drawable/box_shadow"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:padding="16dp"
+        android:layout_below="@id/informasi_data"
+        android:layout_alignStart="@id/informasi_data"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/img_ViewIcon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/katalog_tender"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_ViewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Katalog Tender"
+            android:layout_below="@+id/img_ViewIcon"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_simpantender"
+        android:background="@drawable/box_shadow"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:padding="16dp"
+        android:layout_below="@id/informasi_data"
+        android:layout_alignEnd="@id/informasi_data"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/img_tendersimpan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tender_simpan"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="11dp"/>
+
+        <TextView
+            android:id="@+id/txt_tendersimpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tender Tersimpan"
+            android:layout_below="@+id/img_tendersimpan"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_laporanstatistik"
+        android:background="@drawable/box_shadow"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:padding="16dp"
+        android:layout_below="@id/layout_katalogtender"
+        android:layout_alignStart="@id/layout_katalogtender"
+        >
+
+        <ImageView
+            android:id="@+id/img_statistik"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/statistik"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_lapstatistik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laporan Statistik"
+            android:layout_below="@+id/img_statistik"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_settings"
+        android:background="@drawable/box_shadow"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:padding="16dp"
+        android:layout_below="@id/layout_simpantender"
+        android:layout_alignEnd="@id/layout_simpantender"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/img_settings"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/settings"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="9dp"/>
+
+        <TextView
+            android:id="@+id/txt_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengaturan"
+            android:layout_below="@+id/img_settings"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

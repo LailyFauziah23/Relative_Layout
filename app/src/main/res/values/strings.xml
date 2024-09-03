@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">hello</string>
+    <string name="PT_name">PT XYZ</string>
+    <string name="kota">Sleman</string>
+    <string name="perubahan_data">Informasi perubahan data katalog</string>
+    <string name="pembaruan_terakhir">Pembaruan terakhir: </string>
+    <string name="tanggal_terakhir">16-06-2022 15:00:01</string>
+    <string name="pembaruan_selanjutnya">Pembaruan selanjutnya: </string>
+    <string name="tanggal_selanjutnya">17-06-2022 15:00:01</string>
+
+</resources>
